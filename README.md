@@ -39,4 +39,30 @@ pip install -r requirements.txt
 
 # 3. Run the demo app
 streamlit run app.py
+```
+## 🏆 Results at a Glance
 
+| Model                | CV AUC     | Test AUC | Recall (Churn) | Notes                        |
+|----------------------|------------|----------|----------------|------------------------------|
+| Logistic Regression  | 0.8627     | TBD      | TBD            | Best overall & explainable   |
+| Random Forest        | ~0.85      | -        | -              | Good feature importance      |
+| XGBoost              | ~0.85–0.86 | -        | -              | Slightly better on some runs |
+
+## 🔑 Key Insights
+
+* Customers on month-to-month contracts churn ~45% of the time
+* Short tenure (<12 months) → very high risk
+* Fiber optic + electronic check + no tech support/security = dangerous combination
+* Adding services (security, backup, support) significantly reduces churn probability
+
+## 🛠 Built With
+
+- Python
+- pandas · numpy · scikit-learn · joblib
+- seaborn · matplotlib
+- Streamlit (for the interactive demo)
+
+## 🙌 Acknowledgments
+- Dataset: Telco Customer Churn on Kaggle
+- Feel free to ⭐ the repo or fork it if you find it useful!
+- Made with ❤️ by Ganesh Sahu
